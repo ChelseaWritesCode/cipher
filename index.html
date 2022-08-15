@@ -1,0 +1,121 @@
+<!DOCTYPE HTML>
+<html lang="eng">
+	<head>
+		<title>Cypher</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+	<body>
+		<div class="container-fluid p-5 bg-info text-white text-center">
+		  <h1 class="display-3">Digital Cypher</h1>
+		  <p>Use this tool to encrypt and decrypt sentences using a cypher shift.</p>
+		</div>
+
+		<div class="container mt-5">
+		<!-- main container start-->
+			<!-- accordion start-->
+			<div class="container mt-5">
+				<div id="accordion">
+				  <div class="card">
+				    <div class="card-header">
+				      <a class="btn" data-bs-toggle="collapse" href="#collapseOne">
+				         Encryptor
+				      </a>
+				    </div>
+				    <div id="collapseOne" class="collapse" data-bs-parent="#accordion">
+				      <div class="card-body">
+					      	<form class="row g-3" id="encryptorForm">
+						        <div class = "row g-3">
+						          <p class="h4">Please enter the ecryption key:</p>
+						          <div class="form-floating mb-3 mt-3 col">
+						            <input type="number" class="form-control" id="encryption-key" placeholder="Enter ecryption key" name="encryption-key" required>
+						            <label for="encryption-key" class="ms-2 form-label">Ecryption key</label>
+						            <div class="invalid-feedback">
+						              Please provide a valid integer.
+						            </div>
+						          </div>
+ 									<p class="h4">Please enter the sentence to encrypt:</p>
+						          <div class="form-floating mb-3 mt-3 col">
+						            <input type="text" class="form-control" id="encryption-text" placeholder="Enter ecryption text" name="encryption-text" required>
+						            <label for="encryption-text" class="ms-2 form-label">Ecryption text</label>
+						            <div class="invalid-feedback">
+						              Please provide the encryption text.
+						            </div>
+						          </div>
+ 
+						          <div class="mb-3 p-5 border border-1 rounded position-relative" id="encrypted-text-div" style= "display:none">
+						        
+						            <h1 class= "position-absolute top-50 start-50 translate-middle" id="encrypted-text">generated number</h1>  
+						           
+						          </div>
+						          <div class="row pb-3">
+						            <div class="col">
+						              <button class="btn btn-info fw-bold w-50" type="submit" id="randomGroupSubmit">GO</button>
+						            </div>
+						            <div class="col ">
+						              <button type="reset" class="btn btn-success float-end fw-bold" id="randomGroupRestart">Restart</button>
+						            </div> 
+						          </div>
+						          <div>
+						            <ol id = "randomnGroupUL" style="display:none">
+						             <lh class="fw-bold">Generated Values</lh>
+						            </ol>
+						          </div>
+						          <div>
+						            <p class="text-danger pb-2 fw-bold" style="display:none" id="randomGroupDone">All numbers in the range have been generated.</p>
+						          </div>
+						        </div>
+						        
+      						</form>
+				      </div>
+				    </div>
+				  </div>
+
+				  <div class="card">
+				    <div class="card-header">
+				      <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseTwo">
+				         Decryptor
+				      </a>
+				    </div>
+				    <div id="collapseTwo" class="collapse" data-bs-parent="#accordion">
+				      <div class="card-body">
+				        Lorem ipsum..
+				      </div>
+				    </div>
+				  </div>
+				</div>
+			<!-- swerve to accordion end-->
+			</div>
+		  <!-- main container end-->
+		</div>
+
+		
+
+		<!-- Latest compiled and minified CSS -->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+		<!-- Latest compiled JavaScript -->
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+		<script src="script.js"></script>
+	</body>
+</html>
+
+
+<!-- first attempt start 
+		  <div class="row">
+		    <div class="col">
+		      <h2>Encryptor</h2>
+		      <p>Enter the encryption key</p>
+		      <p>enter the sentence to be encrypted</p>
+		      <h4>Here goes the ecrypted sentence</h4>
+		    </div>
+		    
+		  </div>
+		  <div class="row">
+		    <div class="col">
+		      <h2>Decryptor</h2>
+		      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+		      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+		    </div>
+		  </div>
+		   first attempt end -->
